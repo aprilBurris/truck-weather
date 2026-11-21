@@ -8,6 +8,12 @@ async function getWeather() {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
+
+    weatherArea.textContent = ""; //first line
+    const temp = document.createElement("p");
+    temp.className = "fs-4";
+    temp.textContent = "Temperature: " + data.current.temperature_2m + " " + data.current_units.temperature_2m;
+    weatherArea.appendChild(temp);
 }
 
 button.addEventListener("click", getWeather);
