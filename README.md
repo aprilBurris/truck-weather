@@ -10,3 +10,4 @@ After: Made changes to post main and url. Temp shows fahrenheit, wind speed show
 
 ## Live site
 https://github.com/aprilBurris/truck-weather
+https://aprilburris.github.io/truck-weather/
